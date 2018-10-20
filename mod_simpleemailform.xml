@@ -357,7 +357,38 @@
 					<option value="B">Before</option>
 					<option value="A">After</option>
 				</field>
-			</fieldset>
+
+				<field name="mod_simpleemailform_field9active" type="radio"          default="N" 		label="Activate Field 9" description="Select 'Y' if you want to activate Field 9 and 'R' to activate and make it required. Enter 'H' to make the field hidden (appears in email automatically)." >
+					<option value="Y">JYES</option>
+					<option value="N">JNO</option>
+					<option value="R">Required</option> 
+					<option value="H">Hidden</option>
+				</field>
+				<field name="mod_simpleemailform_field9label"  type="text" size="40" default="Field 9" 	label="Label for Field 9" description="The label for the 5th optional field which will appear in your email form." />
+				<field name="mod_simpleemailform_field9value"  type="text" size="40" default="Value 9"  label="Default Value for Field 9" description="Enter the default value for this field, or hit the spacebar for no default. If this field is a drop-down select, radio button, or checkbox field, enter options separated by commas as follows: return1=visible1,return2=visible2 (where 'returnX' = value returned when selected and 'visibleX' = what is visible onscreen." />
+				<field name="mod_simpleemailform_field9size"   type="text" size="4"  default="40" 	 	label="Display Size of Field 9" description="The size of the 5th optional field which will appear in your email form.  If textarea, enter value as n,n (rows,cols).  If field is Radio / Checkbox size is width in pixels.  Set to 0 to suppress this width, which allows the CSS class to determine appearance." />
+				<field name="mod_simpleemailform_field9maxx"   type="text" size="4"  default="255" 	 	label="Maximum Length of Field 9" description="The maximum number of characters allowed in this field." />
+				<field name="mod_simpleemailform_field9from"   type="list"           default="N" 		label="Field Type" description="Select 'From' if you want this field to be the 'From' text field, 'Subject' if you want this to be the subject text field, 'Normal' for a normal text field, 'Textarea' for a textarea (i.e. a box), 'Drop' for a drop-down select box, 'Radio' for radio buttons, and 'Checkbox' for check boxes. PLEASE NOTE: 'User Defined' type will be removed in 2.1.0!" >
+					<option value="F">From</option>
+					<option value="S">Subject</option>
+					<option value="N">Normal</option>
+					<option value="A">Textarea</option>
+					<option value="D">Drop</option>
+					<option value="R">Radio</option>
+					<option value="C">Checkbox</option>
+					<option value="U">User Defined</option>
+				</field>
+				<field name="mod_simpleemailform_field9ckRfmt" type="radio"  		 default="C"  		label="Field 9 Format" description="If field is radio buttons or checkboxes, enter the Format.  Horizontal format is table/row/col/col/col; Vertical format is table/row/col/col/row/col/col. Use CSS (default) assumes you will use CSS." >
+					<option value="H">Horizontal</option>
+					<option value="V">Vertical</option>
+					<option value="C">Use CSS</option>
+				</field>
+				<field name="mod_simpleemailform_field9ckRpos" type="radio"          default="B" 		label="Field 9 Before/After" description="If field is radio buttons or checkboxes, is label Before or After?" >
+					<option value="B">Before</option>
+					<option value="A">After</option>
+				</field>
+            
+            </fieldset>
 			<fieldset name="advanced">
 				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
 					<option value="1">JGLOBAL_USE_GLOBAL</option>

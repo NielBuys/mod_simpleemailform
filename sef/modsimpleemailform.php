@@ -8,7 +8,7 @@ class sefmodsimpleemailform implements sefv2formrendererinterface
     protected $_output       = '';
     // NOTE to developers: just increase this number for more fields
     // BUT you will have to also increase the number of entries in mod_simpleemailform.xml
-    protected $_maxFields    = 8;        // mixed From, Subject, text, textarea, dropdown select, radio, checkbox fields
+    protected $_maxFields    = 9;        // mixed From, Subject, text, textarea, dropdown select, radio, checkbox fields
     protected $_field        = array();
     protected $_badEmail     = '';
     protected $_fromField    = 1;
